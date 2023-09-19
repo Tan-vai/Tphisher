@@ -1,0 +1,22 @@
+version: '3.7'
+
+networks:
+    internet:
+        driver: bridge
+
+services: 
+
+    Tphisher:
+
+        container_name: Tphisher
+        
+        build: .
+        image: Tphisher:v0.1
+        command: bash Tphisher.sh
+        stdin_open: true
+        tty: true
+        volumes: 
+            - $PWD/websites:/home/websites
+        networks: 
+            - internet
+        restart: always
