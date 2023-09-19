@@ -1,2 +1,2 @@
-# phishing-tool
+# Tphisher
 Use education pupose
